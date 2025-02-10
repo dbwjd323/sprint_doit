@@ -1,3 +1,7 @@
+import { ThemeProvider } from "styled-components";
+import theme from "@/styles/theme";
+import GlobalStyle from "@/styles/globalStyles";
+
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +9,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <ThemeProvider theme={theme}>
+          <GlobalStyle />
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   )
 }
