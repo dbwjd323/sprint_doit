@@ -24,9 +24,9 @@ const theme = {
     },
   },
   breakpoints: {
-    mobile: '480px',
-    tablet: '768px',
-    desktop: '1024px',
+    mobile: '375px',
+    tablet: '744px',
+    desktop: '1020px',
   },
 };
 
